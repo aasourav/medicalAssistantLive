@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://thesis-project-final.vercel.app/' }));
 const connect = async () => {
   const mongoConnect = process.env.MONGO || '';
   try {
